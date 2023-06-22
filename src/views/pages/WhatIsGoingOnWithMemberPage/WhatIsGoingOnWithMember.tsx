@@ -114,7 +114,7 @@ const ConnectedScreen = (props) => {
     return <>
         <h2>{props.title}</h2>
         {calledOnce && !wasAlreadyConnected && <div className="notification">
-            <p><b>Pour effectuer cette action il faut être connecter, nous allons t'envoyer un lien de connexion</b></p>
+            <p><b>Pour effectuer cette action il faut être connecté, nous allons t'envoyer un lien de connexion</b></p>
             { !connected && !loginSent && <form action='' method="POST" id="login_form" onSubmit={onSubmit}>
                 <label htmlFor="emailInput"><b>Ton email (@beta.gouv.fr ou secondaire)</b></label>
                 <div className="input__group">
